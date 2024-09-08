@@ -1,0 +1,104 @@
+.spolight-content {
+    overflow: hidden;
+    width: 100%;
+    padding: 6em 2em;
+}
+
+.spolight-content > a, p {
+    color: rgba(255, 255, 255, .75);
+    font-family: "Akkurat Mono", sans-serif;
+    text-transform: uppercase;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    will-change: transform;
+}
+
+.slide-hidden {
+    display: none;
+}
+
+.spolight-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;   
+}
+
+.timeline {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.timeline p {
+    font-family: "PP Neue Montreal", sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 2rem;
+    font: bolder;
+}
+
+.timeline-text-selected {
+    color: red;
+    flex-grow: 5;
+}
+
+.timeline-text-unselected {
+    flex-grow: .5;
+}
+
+.timeline p sup {
+    position: relative;
+    top: -4px;
+    font-family: "Akkurat Mono", sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/* @media(max-width: 900px) {
+    .timeline {
+        width: 110%;
+    }
+} */

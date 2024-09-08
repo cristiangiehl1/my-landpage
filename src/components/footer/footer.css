@@ -1,0 +1,23 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+footer p {
+    color: white;
+}
+
+footer span {
+    color: gold;
+}
+
+.creci {
+    font-size: .7rem;
+}

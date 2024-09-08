@@ -1,0 +1,29 @@
+.market-hero {
+    height: 100vh;
+
+    padding: 4rem 2rem;
+}
+
+.chart-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+
+
+    background: red;
+}
+
+.chart-selector button {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
